@@ -1,0 +1,266 @@
+/*Google Font*/
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300');
+body {
+    background-image: url(../images/black_texture_background_wallpaper__hd__by_deddyrap-dc95rkv.jpg);
+    background-size: 2000px 1700px;
+    background-repeat: no-repeat;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.neon {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0 20px;
+    font-size: 4em;
+    color: #fff;
+    text-shadow: 0 0 20px #ff005b;
+}
+
+.neon:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+    z-index: -1;
+    color: ff005b;
+    filter: blur(15px);
+}
+
+.neon:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fe3a80;
+    z-index: -2;
+    opacity: .5;
+    filter: blur(40px);
+}
+
+.jumbotron {
+    background: transparent;
+    color: ghostwhite;
+    text-align: center;
+}
+
+.eightiesButton {
+    margin: 10px;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(31, 255, 42);
+    border: 2px solid;
+    border-radius: 4px;
+    border-color: rgb(31, 255, 42);
+    animation: flickering2 5s infinite;
+}
+
+#searchTitle {
+    color: #1FFFFF;
+}
+
+#topic_input {
+    border-radius: 4px;
+    border-color: #1FFFFF;
+}
+
+input[type=text] {
+    color: yellow;
+    background: rgba(31, 255, 255, 0.322);
+    font-family: 'Quicksand', sans-serif;
+}
+
+#searchCard {
+    background-color: transparent;
+    font-size: 18px;
+    color: ghostwhite;
+    border: 2px solid;
+    border-radius: 4px;
+    border-color: #1FFFFF;
+    animation: flickering 5s infinite;
+}
+
+button {
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(206, 255, 31);
+    border: 2px solid;
+    border-radius: 4px;
+    border-color: rgb(206, 255, 31);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+ .card{
+    border: 2px solid rgb(241, 169, 12); 
+}
+
+p {
+    text-align: center;
+    color: rgb(31, 255, 42);
+}
+
+#downloadButton{
+    margin: 10px;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #fe3a80;
+    border: 2px solid;
+    border-radius: 4px;
+    border-color: rgb(26, 7, 107);;
+}
+
+#searchBox {
+    margin-left: 250px;
+}
+
+#topicsCard {
+    background-color: transparent;
+    font-size: 22px;
+    color: ghostwhite;
+    border: 2px solid;
+    border-radius: 4px;
+    border-color: #1FFFFF;
+    animation: flickering 15s infinite;
+}
+
+.imageHolder {
+    margin: 20px;
+    display: inline-block;
+}
+
+.containerNeonButton {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/*Footer*/
+
+.navbar {
+    background-color: transparent;
+    color: ghostwhite;
+    border: 2px solid;
+    border-radius: 4px;
+    border-color: #1FFFFF;
+    animation: flickering 15s infinite;
+}
+
+/*Footer GifTastic*/
+span {
+    position: absolute; 
+    margin-top: 50px;
+    left: 6%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0 20px;
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 0 0 20px #ff005b;
+}
+
+span:after {
+    content: attr(data-text);
+    position: absolute;
+    margin-top: 10px;
+    left: 0;
+    padding: 0 20px;
+    z-index: -1;
+    color: ff005b;
+    filter: blur(15px);
+}
+
+span:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fe3a80;
+    z-index: -2;
+    opacity: .5;
+    filter: blur(40px);
+}
+
+/*Flickering Animation*/
+@keyframes flickering {
+    0% {
+        border-color: transparent;
+        opacity: 0.2;
+    }
+    2% {
+        border-color: #1FFFFF;
+        opacity: 1;
+    }
+    4% {
+        border-color: transparent;
+        opacity: 0.2;
+    }
+    8% {
+        border-color: #1FFFFF;
+        opacity: 1;
+    }
+    28% {
+        border-color: #1FFFFF;
+        opacity: 1;
+    }
+    30% {
+        border-color: transparent;
+        opacity: 0.2;
+    }
+    36% {
+        border-color: #1FFFFF;
+        opacity: 1;
+    }
+    100% {
+        border-color: #1FFFFF;
+        opacity: 1;
+    }
+}
+
+@keyframes flickering2 {
+    0% {
+        border-color: transparent;
+        opacity: 0.2;
+    }
+    2% {
+        border-color: rgb(31, 255, 42);
+        opacity: 1;
+    }
+    4% {
+        border-color: transparent;
+        opacity: 0.2;
+    }
+    8% {
+        border-color: rgb(31, 255, 42);
+        opacity: 1;
+    }
+    28% {
+        border-color: rgb(31, 255, 42);
+        opacity: 1;
+    }
+    30% {
+        border-color: transparent;
+        opacity: 0.2;
+    }
+    36% {
+        border-color: rgb(31, 255, 42);
+        opacity: 1;
+    }
+    100% {
+        border-color: rgb(31, 255, 42)FF;
+        opacity: 1;
+    }
+}

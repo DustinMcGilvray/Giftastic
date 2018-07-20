@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,38 +12,79 @@
     <link rel="icon" href="assets/images/80s_logo_favicon.png">
     <!--jQuery CDN Link-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+        crossorigin="anonymous">
     <!--Local CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
     <!--Google Font Link-->
-    <!--Link Goes Here-->
 
 </head>
+
 <body>
-<div class="container">
-    <h1>80's GifTastic Search</h1>
-
-    <!--Created Buttons are Dumped Here-->
-<div id="buttons">
-
-</div>
-
-
-<form id="topicForm" >
-    <label for="topic_input">Add a Gif</label>
-    <input type="text" id="topic_input"><br>
-    
-    <!--Button triggers new topic to be added-->
-    <input id="addButton" type="submit" value="Add a Gif">
-   
-</form>
-
-    <div id="topics">
-        
+    <!--Jumbotron-->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="" style="height:100%;">
+               
+                    <div class="neon title" data-text="80's Giftastic Search">80's GifTastic Search</div>
+                
+            </div>
+        </div>
     </div>
-    
-</div>
+
+    <!--Main Content-->
+    <div class="container">
+
+        <!--Created Buttons are Dumped Here-->
+        <div id="buttons">
+            <section class="eightiesButton" style="height:100%;">
+
+            </section>
+        </div>
+
+        <!--Search Form-->
+        <div id="searchCard" class="card bg-transaprent border-transparent">
+            <div class="card-body">
+
+                <form id="searchForm">
+                    <label id="searchTitle" for="topic_input">Search the 80's</label>
+                    <input id="topic_input" type="text" id="topic_input">
+                    <button id="searchButton" type="submit" class="neon_two">"Relive the 80's"</button>
+                </form>
+
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <!--Gifs Populate Here-->
+        <div id="topicsCard" class="card">
+            <div class="card-body">
+                <div id="topics">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <nav class="navbar fixed-bottom">
+        <nav class="navbar-brand">
+                <span>GifTastic</span>  
+        </nav>
+        <nav class="navbar-brand">
+            <img src="assets/images/PoweredBy_200_Horizontal_Light-Backgrounds_With_Logo.gif" class="d-inline-block align-top" alt="">
+        </nav>
+    </nav>
 
     <!--Local JavaScript-->
     <script src="assets/javascript/app.js"></script>
 </body>
+
 </html>
