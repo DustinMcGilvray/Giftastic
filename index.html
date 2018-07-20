@@ -12,6 +12,8 @@
     <link rel="icon" href="assets/images/80s_logo_favicon.png">
     <!--jQuery CDN Link-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!---->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
     <!--Bootstrap CDN-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
@@ -29,9 +31,9 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="" style="height:100%;">
-               
-                    <div class="neon title" data-text="80's Giftastic Search">80's GifTastic Search</div>
-                
+
+                <div class="neon title" data-text="80's Giftastic Search">80's GifTastic Search</div>
+
             </div>
         </div>
     </div>
@@ -46,37 +48,34 @@
             </section>
         </div>
 
+        <br>
+
         <!--Search Form-->
         <div id="searchCard" class="card bg-transaprent border-transparent">
             <div class="card-body">
 
                 <form id="searchForm">
-                    <label id="searchTitle" for="topic_input">Search the 80's</label>
+                    <label id="searchTitle" for="topic_input">Search the</label>
                     <input id="topic_input" type="text" id="topic_input">
                     <button id="searchButton" type="submit" class="neon_two">"Relive the 80's"</button>
                 </form>
 
             </div>
         </div>
+    </div>
 
-        <br>
-        <br>
-
+        
         <!--Gifs Populate Here-->
-        <div id="topicsCard" class="card">
-            <div class="card-body">
-                <div id="topics">
 
-                </div>
-            </div>
+        <div id="topics">
+
         </div>
 
-    </div>
 
     <!-- Footer -->
     <nav class="navbar fixed-bottom">
         <nav class="navbar-brand">
-                <span>GifTastic</span>  
+            <span>GifTastic</span>
         </nav>
         <nav class="navbar-brand">
             <img src="assets/images/PoweredBy_200_Horizontal_Light-Backgrounds_With_Logo.gif" class="d-inline-block align-top" alt="">

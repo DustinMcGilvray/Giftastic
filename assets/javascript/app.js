@@ -1,12 +1,14 @@
 $(document).ready(function () {
+
   //Array of Topics
-  var topics = ["80s Movies", "80s Toys", "80s Music", "80s Fashion"];
+  var topics = ["80s Movies", "80s Toys", "80s Music", "80s Clothes"];
   var click=0;
+
   //Function for Displaying Gifs
   function displayEighties() {
     $("#topics").empty();
     var eightiesInfo = $(this).attr("data-name");
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + eightiesInfo + "&api_key=sm8z5Yxja8rinARsGr6GRGuwebdVVY9o&offset=20&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + eightiesInfo + "&api_key=sm8z5Yxja8rinARsGr6GRGuwebdVVY9o&offset=5&limit=10";
 
     $.ajax({
       url: queryURL,
@@ -20,12 +22,13 @@ $(document).ready(function () {
         
         var rating = response.data[i].rating;
         var r = $("<p>").text("Rating: " + rating);
-        var downloadButton = $("<a download>");
-        var d = downloadButton.attr("href",response.data[i].images.fixed_height.url);
-        var button = $("<button id='downloadButton'>").text("Download");
-        d.append(button);
-        // console.log(images.fixed_height_small.url);
 
+        //Download Button
+        // var downloadButton = $("<a download>");
+        // var d = downloadButton.attr("href",response.data[i].images.fixed_height.url);
+        // var button = $("<button id='downloadButton'>").text("Download");
+        // d.append(button);
+        
         //Holds the images, download, and ratings.
         var imageHolder = $("<div class= 'imageHolder'>");
 
@@ -35,19 +38,23 @@ $(document).ready(function () {
         image.attr("data-play", imgUrlPlay);
         image.attr("data-status", "stop");
         image.addClass("picture");
-        image.addClass("card")
+        image.addClass("card");
 
+        //imgBorder class to give each gif a different border color. Used (+i+) in Voltron Trivia Game to get similar result.
         imageHolder.append(image);
+        
         imageHolder.append(r);
-        imageHolder.append(button);
 
+        
+
+        //Download Buttonin DOM
+        // imageHolder.append(button);
 
         $("#topics").append(imageHolder);
       }
     });
   }
 
-  
   //Function for dumping the JSON content for each button into the div
   function topicButtons() {
     $("#buttons").empty();
@@ -60,6 +67,7 @@ $(document).ready(function () {
       if (b.attr("data-click"))
       b.attr("data-click")
       $("#buttons").append(b);
+      $("#topic_input").val("80's");
     }
   }
 
