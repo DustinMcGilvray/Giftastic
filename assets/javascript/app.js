@@ -41,13 +41,11 @@ $(document).ready(function () {
         image.addClass("card");
 
         //imgBorder class to give each gif a different border color. Used (+i+) in Voltron Trivia Game to get similar result.
+       
         imageHolder.append(image);
-        
         imageHolder.append(r);
-
         
-
-        //Download Buttonin DOM
+        //Download Button in DOM
         // imageHolder.append(button);
 
         $("#topics").append(imageHolder);
