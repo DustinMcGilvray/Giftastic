@@ -6,6 +6,7 @@
 </p>
 
 ## Overview
+---
 This is a dynamic web page that populates with 1980's themed static gifs based on search terms using the Giphy API and an AJAX GET request. When the search results are populated, ten gifs will appear in a paused state. The user can then clikc on the gif to play them. On a second click, the gif will pause again. 
 The user can search using one of the pre-made search terms populated in one of the buttons or search for their own gifs using the Search Bar. When a user inputs a term in the search bar, the term will populate as a button. The user can then click the button to bring in the gifs for the search term. The results are based on the top ten gifs from the Giphy API and will include the rating for the individual gifs.
 
